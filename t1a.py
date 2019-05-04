@@ -1,19 +1,64 @@
 #imports section
+import json
+import sys
 import requests
 
 #function return Ticker Data for EUR market for passed currency
+#inputs are
+#currency - name of currency for getting ticker data
+#return JSON string with Ticker Data
 def getTickerData(self, currency):
-    return requests.get('https://www.alphavantage.co/query?function=DIGITAL_CURRENCY_DAILY&symbol='+
-    currency +'&market=EUR&apikey=VEWJ1K6W3ENPI4NB')
+    try:
+        rq = requests.get('https://www.alphavantage.co/query?function=DIGITAL_CURRENCY_DAILY&symbol='+
+        currency +'&market=EUR&apikey=VEWJ1K6W3ENPI4NB').json()
+    except:
+        print("Something went wrong")
+    finally:
+        try:
+            return rq['Time Series (Digital Currency Daily)']
+        except:
+            return ''
+
+#function return targeted tickers from input list
+#inputs are
+#tickers - source list of data
+#target - behavior to match, could throw to 'pos' or 'neg'
+def getSomeTickers(self, tickers, target):
+    founded = []
+    if tickers == [] or (target != 'pos' and target != 'neg'):
+        return founded
+    for ticker in tickers:
+        tickerGain = float(tickers[ticker]['4a. close (EUR)']) - float(tickers[ticker]['1a. open (EUR)'])
+        if (tickerGain > 0 and 'pos' == target) or (tickerGain < 0 and 'neg' == target):
+            founded.append(tickers[ticker])
+    return founded
 
 #getting BCH tickers
-BCHrq = getTickerData(0, 'BCH')
+BCHtkrs = getTickerData(0, 'BCH')
 #getting ETH tickers
-ETHrq = getTickerData(0, 'ETH')
+ETHtkrs = getTickerData(0, 'ETH')
 #getting LTC tickers
-LTCrq = getTickerData(0, 'LTC')
+LTCtkrs = getTickerData(0, 'LTC')
+if BCHtkrs == '' or ETHtkrs == '' or LTCtkrs == '':
+    sys.exit("Don't have data to proccess")
 
 #finding positive ends
-
-
-print(ETHrq.json())
+BCHtkrsPos = getSomeTickers(0, BCHtkrs, 'pos')
+ETHtkrsPos = getSomeTickers(0, ETHtkrs, 'pos')
+LTCtkrsPos = getSomeTickers(0, ETHtkrs, 'pos')
+#adding currency mark to each row and put all in one by JSON way
+positiveTickerData = '['
+for row in BCHtkrsPos:
+    row['currency'] = 'BCH'
+    positiveTickerData = positiveTickerData + str(row) + ','
+for row in ETHtkrsPos:
+    row['currency'] = 'ETH'
+    positiveTickerData = positiveTickerData + str(row) + ','
+for row in LTCtkrsPos:
+    row['currency'] = 'LTC'
+    positiveTickerData = positiveTickerData + str(row) + ','
+positiveTickerData = positiveTickerData[:-1] + ']'
+#writing positive ends
+f = open("positiveTickerData.txt", "w")
+f.write(positiveTickerData)
+f.close()
