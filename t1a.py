@@ -45,7 +45,7 @@ if BCHtkrs == '' or ETHtkrs == '' or LTCtkrs == '':
 #finding positive ends
 BCHtkrsPos = getSomeTickers(0, BCHtkrs, 'pos')
 ETHtkrsPos = getSomeTickers(0, ETHtkrs, 'pos')
-LTCtkrsPos = getSomeTickers(0, ETHtkrs, 'pos')
+LTCtkrsPos = getSomeTickers(0, LTCtkrs, 'pos')
 #adding currency mark to each row and put all in one by JSON way
 positiveTickerData = '['
 for row in BCHtkrsPos:
