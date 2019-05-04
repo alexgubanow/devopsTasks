@@ -29,7 +29,10 @@ def getSomeTickers(self, tickers, target):
         return founded
     for ticker in tickers:
         tickerGain = float(tickers[ticker]['4a. close (EUR)']) - float(tickers[ticker]['1a. open (EUR)'])
+        if tickerGain < 0:
+            tickerGain = -1
         if (tickerGain > 0 and 'pos' == target) or (tickerGain < 0 and 'neg' == target):
+            tickers[ticker]['timeStamp'] = ticker
             founded.append(tickers[ticker])
     return founded
 
