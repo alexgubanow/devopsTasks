@@ -1,0 +1,564 @@
+2018-06-11T03:22:36.0832960+02:00 [81] info: 07-0013 client[AMPS_Y30994-json-tcp-3931-212395483356083156](10.87.80.126:55300) disconnected: connection closed.
+2018-06-11T03:22:36.0833250+02:00 [81] info: 16-0004 client[AMPS_Y30994-json-tcp-3931-212395483356083156] 0 queued sow requests canceled.
+2018-06-11T03:22:38.0000940+02:00 [243] info: 29-0103 AMPS action module invoked: action_do_downgrade_replication
+2018-06-11T03:22:38.0001170+02:00 [243] info: 29-0103 AMPS action_on_schedule event [unknown] scheduled to run again on Mon Jun 11 03:23:08 2018
+
+2018-06-11T03:22:38.0001220+02:00 [243] info: 29-0103 AMPS action module invoked: action_do_upgrade_replication
+2018-06-11T03:22:38.0001280+02:00 [243] info: 29-0103 AMPS action_on_schedule event [unknown] scheduled to run again on Mon Jun 11 03:23:08 2018
+
+2018-06-11T03:22:42.1782190+02:00 [59] info: 1D-0006 AMPS transaction log create journal file: /data/journal/AMPS_Y30994.0000616051.journal
+2018-06-11T03:22:42.1788780+02:00 [63] info: 1D-0035 AMPS transaction log journal extents written:
+extents info:
+ journal file  = /data/journal/AMPS_Y30994.0000616050.journal
+ first txid      = 1528516924045766521
+ first timestamp = 20180611T012242.178169Z
+ last txid       = 0
+ last timestamp  = 
+ crc32           = 2897584396
+2018-06-11T03:22:42.1790370+02:00 [59] info: 1D-0031 AMPS transaction log journal creation started:
+journal info:
+ journal file   = /data/journal/AMPS_Y30994.0000616051.journal
+ mode           = lazy
+ write size     = 1MB
+2018-06-11T03:22:42.1790760+02:00 [59] info: 1D-0032 AMPS transaction log journal creation completed:
+journal info:
+ journal file   = /data/journal/AMPS_Y30994.0000616051.journal
+ file size         = 10MB
+ write size        = 1MB
+ write concurrency = 1
+ allocate time     = 2.6435e-05 secs
+ extend time       = 3.27e-07 secs
+ mode              = lazy
+2018-06-11T03:22:42.1793370+02:00 [59] info: 1D-0036 AMPS transaction log journal metadata written:
+journal metadata info:
+ journal file       = /data/journal/AMPS_Y30994.0000616051.journal
+ magic string        = AMPS
+ version             = 8
+ version string      = amps::txlog/v8
+ instance name hash  = 3765524036
+ compression type    = gz
+ compression options = 6
+ crc32               = 3992524499
+2018-06-11T03:22:42.1793380+02:00 [59] info: 1D-0035 AMPS transaction log journal extents written:
+extents info:
+ journal file  = /data/journal/AMPS_Y30994.0000616051.journal
+ first txid      = 0
+ first timestamp = 0
+ last txid       = 0
+ last timestamp  = 0
+ crc32           = 1970194773
+2018-06-11T03:22:42.1793390+02:00 [59] info: 1D-0005 AMPS transaction log close journal file: /data/journal/AMPS_Y30994.0000616051.journal
+2018-06-11T03:22:42.1793810+02:00 [59] info: 1D-0004 AMPS transaction log open journal file: /data/journal/AMPS_Y30994.0000616051.journal
+2018-06-11T03:22:42.1794860+02:00 [60] info: 1D-0005 AMPS transaction log close journal file: /data/journal/AMPS_Y30994.0000616049.journal
+2018-06-11T03:22:42.1800120+02:00 [60] info: 1D-0035 AMPS transaction log journal extents written:
+extents info:
+ journal file  = /data/journal/AMPS_Y30994.0000616049.journal
+ first txid      = 1528516924045746452
+ first timestamp = 20180611T011719.013973Z
+ last txid       = 1528516924045766520
+ last timestamp  = 20180611T012242.178162Z
+ crc32           = 1234595192
+2018-06-11T03:22:42.1800220+02:00 [60] info: 1D-0079 AMPS transaction log journal file index sparsified: /data/journal/AMPS_Y30994.0000616049.journal
+2018-06-11T03:22:43.1799980+02:00 [59] info: 1D-0006 AMPS transaction log create journal file: /data/journal/AMPS_Y30994.0000616052.journal
+2018-06-11T03:22:43.1802830+02:00 [60] info: 1D-0005 AMPS transaction log close journal file: /data/journal/AMPS_Y30994.0000616050.journal
+2018-06-11T03:22:43.1805220+02:00 [63] info: 1D-0035 AMPS transaction log journal extents written:
+extents info:
+ journal file  = /data/journal/AMPS_Y30994.0000616051.journal
+ first txid      = 1528516924045786991
+ first timestamp = 20180611T012243.179924Z
+ last txid       = 0
+ last timestamp  = 
+ crc32           = 1070134963
+2018-06-11T03:22:43.1806120+02:00 [59] info: 1D-0031 AMPS transaction log journal creation started:
+journal info:
+ journal file   = /data/journal/AMPS_Y30994.0000616052.journal
+ mode           = lazy
+ write size     = 1MB
+2018-06-11T03:22:43.1806620+02:00 [59] info: 1D-0032 AMPS transaction log journal creation completed:
+journal info:
+ journal file   = /data/journal/AMPS_Y30994.0000616052.journal
+ file size         = 10MB
+ write size        = 1MB
+ write concurrency = 1
+ allocate time     = 3.7675e-05 secs
+ extend time       = 3.35e-07 secs
+ mode              = lazy
+2018-06-11T03:22:43.1808390+02:00 [60] info: 1D-0035 AMPS transaction log journal extents written:
+extents info:
+ journal file  = /data/journal/AMPS_Y30994.0000616050.journal
+ first txid      = 1528516924045766521
+ first timestamp = 20180611T012242.178169Z
+ last txid       = 1528516924045786990
+ last timestamp  = 20180611T012243.179918Z
+ crc32           = 3418861785
+2018-06-11T03:22:43.1808490+02:00 [60] info: 1D-0079 AMPS transaction log journal file index sparsified: /data/journal/AMPS_Y30994.0000616050.journal
+2018-06-11T03:22:43.1811550+02:00 [59] info: 1D-0036 AMPS transaction log journal metadata written:
+journal metadata info:
+ journal file       = /data/journal/AMPS_Y30994.0000616052.journal
+ magic string        = AMPS
+ version             = 8
+ version string      = amps::txlog/v8
+ instance name hash  = 3765524036
+ compression type    = gz
+ compression options = 6
+ crc32               = 3992524499
+2018-06-11T03:22:43.1811560+02:00 [59] info: 1D-0035 AMPS transaction log journal extents written:
+extents info:
+ journal file  = /data/journal/AMPS_Y30994.0000616052.journal
+ first txid      = 0
+ first timestamp = 0
+ last txid       = 0
+ last timestamp  = 0
+ crc32           = 1970194773
+2018-06-11T03:22:43.1811580+02:00 [59] info: 1D-0005 AMPS transaction log close journal file: /data/journal/AMPS_Y30994.0000616052.journal
+2018-06-11T03:22:43.1812120+02:00 [59] info: 1D-0004 AMPS transaction log open journal file: /data/journal/AMPS_Y30994.0000616052.journal
+2018-06-11T03:22:43.8284010+02:00 [59] info: 1D-0006 AMPS transaction log create journal file: /data/journal/AMPS_Y30994.0000616053.journal
+2018-06-11T03:22:43.8287130+02:00 [60] info: 1D-0005 AMPS transaction log close journal file: /data/journal/AMPS_Y30994.0000616051.journal
+2018-06-11T03:22:43.8290030+02:00 [63] info: 1D-0035 AMPS transaction log journal extents written:
+extents info:
+ journal file  = /data/journal/AMPS_Y30994.0000616052.journal
+ first txid      = 1528516924045807464
+ first timestamp = 20180611T012243.828322Z
+ last txid       = 0
+ last timestamp  = 
+ crc32           = 1869818486
+2018-06-11T03:22:43.8290890+02:00 [59] info: 1D-0031 AMPS transaction log journal creation started:
+journal info:
+ journal file   = /data/journal/AMPS_Y30994.0000616053.journal
+ mode           = lazy
+ write size     = 1MB
+2018-06-11T03:22:43.8291330+02:00 [59] info: 1D-0032 AMPS transaction log journal creation completed:
+journal info:
+ journal file   = /data/journal/AMPS_Y30994.0000616053.journal
+ file size         = 10MB
+ write size        = 1MB
+ write concurrency = 1
+ allocate time     = 3.2138e-05 secs
+ extend time       = 3.25e-07 secs
+ mode              = lazy
+2018-06-11T03:22:43.8293950+02:00 [60] info: 1D-0035 AMPS transaction log journal extents written:
+extents info:
+ journal file  = /data/journal/AMPS_Y30994.0000616051.journal
+ first txid      = 1528516924045786991
+ first timestamp = 20180611T012243.179924Z
+ last txid       = 1528516924045807463
+ last timestamp  = 20180611T012243.828310Z
+ crc32           = 595849610
+2018-06-11T03:22:43.8294020+02:00 [59] info: 1D-0036 AMPS transaction log journal metadata written:
+journal metadata info:
+ journal file       = /data/journal/AMPS_Y30994.0000616053.journal
+ magic string        = AMPS
+ version             = 8
+ version string      = amps::txlog/v8
+ instance name hash  = 3765524036
+ compression type    = gz
+ compression options = 6
+ crc32               = 3992524499
+2018-06-11T03:22:43.8294030+02:00 [59] info: 1D-0035 AMPS transaction log journal extents written:
+extents info:
+ journal file  = /data/journal/AMPS_Y30994.0000616053.journal
+ first txid      = 0
+ first timestamp = 0
+ last txid       = 0
+ last timestamp  = 0
+ crc32           = 1970194773
+2018-06-11T03:22:43.8294050+02:00 [59] info: 1D-0005 AMPS transaction log close journal file: /data/journal/AMPS_Y30994.0000616053.journal
+2018-06-11T03:22:43.8294130+02:00 [60] info: 1D-0079 AMPS transaction log journal file index sparsified: /data/journal/AMPS_Y30994.0000616051.journal
+2018-06-11T03:22:43.8294430+02:00 [59] info: 1D-0004 AMPS transaction log open journal file: /data/journal/AMPS_Y30994.0000616053.journal
+2018-06-11T03:22:44.4389730+02:00 [59] info: 1D-0006 AMPS transaction log create journal file: /data/journal/AMPS_Y30994.0000616054.journal
+2018-06-11T03:22:44.4397390+02:00 [59] info: 1D-0031 AMPS transaction log journal creation started:
+journal info:
+ journal file   = /data/journal/AMPS_Y30994.0000616054.journal
+ mode           = lazy
+ write size     = 1MB
+2018-06-11T03:22:44.4397940+02:00 [59] info: 1D-0032 AMPS transaction log journal creation completed:
+journal info:
+ journal file   = /data/journal/AMPS_Y30994.0000616054.journal
+ file size         = 10MB
+ write size        = 1MB
+ write concurrency = 1
+ allocate time     = 4.0733e-05 secs
+ extend time       = 4.63e-07 secs
+ mode              = lazy
+2018-06-11T03:22:44.4402240+02:00 [59] info: 1D-0036 AMPS transaction log journal metadata written:
+journal metadata info:
+ journal file       = /data/journal/AMPS_Y30994.0000616054.journal
+ magic string        = AMPS
+ version             = 8
+ version string      = amps::txlog/v8
+ instance name hash  = 3765524036
+ compression type    = gz
+ compression options = 6
+ crc32               = 3992524499
+2018-06-11T03:22:44.4402260+02:00 [59] info: 1D-0035 AMPS transaction log journal extents written:
+extents info:
+ journal file  = /data/journal/AMPS_Y30994.0000616054.journal
+ first txid      = 0
+ first timestamp = 0
+ last txid       = 0
+ last timestamp  = 0
+ crc32           = 1970194773
+2018-06-11T03:22:44.4402280+02:00 [59] info: 1D-0005 AMPS transaction log close journal file: /data/journal/AMPS_Y30994.0000616054.journal
+2018-06-11T03:22:44.4402530+02:00 [60] info: 1D-0005 AMPS transaction log close journal file: /data/journal/AMPS_Y30994.0000616052.journal
+2018-06-11T03:22:44.4402870+02:00 [59] info: 1D-0004 AMPS transaction log open journal file: /data/journal/AMPS_Y30994.0000616054.journal
+2018-06-11T03:22:44.4410590+02:00 [63] info: 1D-0035 AMPS transaction log journal extents written:
+extents info:
+ journal file  = /data/journal/AMPS_Y30994.0000616053.journal
+ first txid      = 1528516924045827935
+ first timestamp = 20180611T012244.438900Z
+ last txid       = 0
+ last timestamp  = 
+ crc32           = 2213599041
+2018-06-11T03:22:44.4413040+02:00 [60] info: 1D-0035 AMPS transaction log journal extents written:
+extents info:
+ journal file  = /data/journal/AMPS_Y30994.0000616052.journal
+ first txid      = 1528516924045807464
+ first timestamp = 20180611T012243.828322Z
+ last txid       = 1528516924045827934
+ last timestamp  = 20180611T012244.438885Z
+ crc32           = 2369823607
+2018-06-11T03:22:44.4413140+02:00 [60] info: 1D-0079 AMPS transaction log journal file index sparsified: /data/journal/AMPS_Y30994.0000616052.journal
+2018-06-11T03:22:45.1103040+02:00 [59] info: 1D-0006 AMPS transaction log create journal file: /data/journal/AMPS_Y30994.0000616055.journal
+2018-06-11T03:22:45.1107960+02:00 [63] info: 1D-0035 AMPS transaction log journal extents written:
+extents info:
+ journal file  = /data/journal/AMPS_Y30994.0000616054.journal
+ first txid      = 1528516924045848404
+ first timestamp = 20180611T012245.110224Z
+ last txid       = 0
+ last timestamp  = 
+ crc32           = 2707917445
+2018-06-11T03:22:45.1111270+02:00 [59] info: 1D-0031 AMPS transaction log journal creation started:
+journal info:
+ journal file   = /data/journal/AMPS_Y30994.0000616055.journal
+ mode           = lazy
+ write size     = 1MB
+2018-06-11T03:22:45.1111700+02:00 [59] info: 1D-0032 AMPS transaction log journal creation completed:
+journal info:
+ journal file   = /data/journal/AMPS_Y30994.0000616055.journal
+ file size         = 10MB
+ write size        = 1MB
+ write concurrency = 1
+ allocate time     = 3.155e-05 secs
+ extend time       = 3.26e-07 secs
+ mode              = lazy
+2018-06-11T03:22:45.1114200+02:00 [59] info: 1D-0036 AMPS transaction log journal metadata written:
+journal metadata info:
+ journal file       = /data/journal/AMPS_Y30994.0000616055.journal
+ magic string        = AMPS
+ version             = 8
+ version string      = amps::txlog/v8
+ instance name hash  = 3765524036
+ compression type    = gz
+ compression options = 6
+ crc32               = 3992524499
+2018-06-11T03:22:45.1114210+02:00 [59] info: 1D-0035 AMPS transaction log journal extents written:
+extents info:
+ journal file  = /data/journal/AMPS_Y30994.0000616055.journal
+ first txid      = 0
+ first timestamp = 0
+ last txid       = 0
+ last timestamp  = 0
+ crc32           = 1970194773
+2018-06-11T03:22:45.1114230+02:00 [59] info: 1D-0005 AMPS transaction log close journal file: /data/journal/AMPS_Y30994.0000616055.journal
+2018-06-11T03:22:45.1114660+02:00 [59] info: 1D-0004 AMPS transaction log open journal file: /data/journal/AMPS_Y30994.0000616055.journal
+2018-06-11T03:22:45.1120260+02:00 [60] info: 1D-0005 AMPS transaction log close journal file: /data/journal/AMPS_Y30994.0000616053.journal
+2018-06-11T03:22:45.1125080+02:00 [60] info: 1D-0035 AMPS transaction log journal extents written:
+extents info:
+ journal file  = /data/journal/AMPS_Y30994.0000616053.journal
+ first txid      = 1528516924045827935
+ first timestamp = 20180611T012244.438900Z
+ last txid       = 1528516924045848403
+ last timestamp  = 20180611T012245.110212Z
+ crc32           = 2270461165
+2018-06-11T03:22:45.1125150+02:00 [60] info: 1D-0079 AMPS transaction log journal file index sparsified: /data/journal/AMPS_Y30994.0000616053.journal
+2018-06-11T03:22:45.7665450+02:00 [59] info: 1D-0006 AMPS transaction log create journal file: /data/journal/AMPS_Y30994.0000616056.journal
+2018-06-11T03:22:45.7669620+02:00 [63] info: 1D-0035 AMPS transaction log journal extents written:
+extents info:
+ journal file  = /data/journal/AMPS_Y30994.0000616055.journal
+ first txid      = 1528516924045868877
+ first timestamp = 20180611T012245.766476Z
+ last txid       = 0
+ last timestamp  = 
+ crc32           = 409525126
+2018-06-11T03:22:45.7671760+02:00 [59] info: 1D-0031 AMPS transaction log journal creation started:
+journal info:
+ journal file   = /data/journal/AMPS_Y30994.0000616056.journal
+ mode           = lazy
+ write size     = 1MB
+2018-06-11T03:22:45.7672230+02:00 [59] info: 1D-0032 AMPS transaction log journal creation completed:
+journal info:
+ journal file   = /data/journal/AMPS_Y30994.0000616056.journal
+ file size         = 10MB
+ write size        = 1MB
+ write concurrency = 1
+ allocate time     = 3.4646e-05 secs
+ extend time       = 3.2e-07 secs
+ mode              = lazy
+2018-06-11T03:22:45.7672840+02:00 [60] info: 1D-0005 AMPS transaction log close journal file: /data/journal/AMPS_Y30994.0000616054.journal
+2018-06-11T03:22:45.7674730+02:00 [59] info: 1D-0036 AMPS transaction log journal metadata written:
+journal metadata info:
+ journal file       = /data/journal/AMPS_Y30994.0000616056.journal
+ magic string        = AMPS
+ version             = 8
+ version string      = amps::txlog/v8
+ instance name hash  = 3765524036
+ compression type    = gz
+ compression options = 6
+ crc32               = 3992524499
+2018-06-11T03:22:45.7674750+02:00 [59] info: 1D-0035 AMPS transaction log journal extents written:
+extents info:
+ journal file  = /data/journal/AMPS_Y30994.0000616056.journal
+ first txid      = 0
+ first timestamp = 0
+ last txid       = 0
+ last timestamp  = 0
+ crc32           = 1970194773
+2018-06-11T03:22:45.7674760+02:00 [59] info: 1D-0005 AMPS transaction log close journal file: /data/journal/AMPS_Y30994.0000616056.journal
+2018-06-11T03:22:45.7675180+02:00 [59] info: 1D-0004 AMPS transaction log open journal file: /data/journal/AMPS_Y30994.0000616056.journal
+2018-06-11T03:22:45.7678940+02:00 [60] info: 1D-0035 AMPS transaction log journal extents written:
+extents info:
+ journal file  = /data/journal/AMPS_Y30994.0000616054.journal
+ first txid      = 1528516924045848404
+ first timestamp = 20180611T012245.110224Z
+ last txid       = 1528516924045868876
+ last timestamp  = 20180611T012245.766464Z
+ crc32           = 4277435788
+2018-06-11T03:22:45.7679040+02:00 [60] info: 1D-0079 AMPS transaction log journal file index sparsified: /data/journal/AMPS_Y30994.0000616054.journal
+2018-06-11T03:22:46.5202210+02:00 [59] info: 1D-0006 AMPS transaction log create journal file: /data/journal/AMPS_Y30994.0000616057.journal
+2018-06-11T03:22:46.5206620+02:00 [60] info: 1D-0005 AMPS transaction log close journal file: /data/journal/AMPS_Y30994.0000616055.journal
+2018-06-11T03:22:46.5207000+02:00 [63] info: 1D-0035 AMPS transaction log journal extents written:
+extents info:
+ journal file  = /data/journal/AMPS_Y30994.0000616056.journal
+ first txid      = 1528516924045889348
+ first timestamp = 20180611T012246.520162Z
+ last txid       = 0
+ last timestamp  = 
+ crc32           = 3389978841
+2018-06-11T03:22:46.5210360+02:00 [59] info: 1D-0031 AMPS transaction log journal creation started:
+journal info:
+ journal file   = /data/journal/AMPS_Y30994.0000616057.journal
+ mode           = lazy
+ write size     = 1MB
+2018-06-11T03:22:46.5210920+02:00 [59] info: 1D-0032 AMPS transaction log journal creation completed:
+journal info:
+ journal file   = /data/journal/AMPS_Y30994.0000616057.journal
+ file size         = 10MB
+ write size        = 1MB
+ write concurrency = 1
+ allocate time     = 4.2163e-05 secs
+ extend time       = 3.62e-07 secs
+ mode              = lazy
+2018-06-11T03:22:46.5212600+02:00 [60] info: 1D-0035 AMPS transaction log journal extents written:
+extents info:
+ journal file  = /data/journal/AMPS_Y30994.0000616055.journal
+ first txid      = 1528516924045868877
+ first timestamp = 20180611T012245.766476Z
+ last txid       = 1528516924045889347
+ last timestamp  = 20180611T012246.520129Z
+ crc32           = 851911628
+2018-06-11T03:22:46.5212740+02:00 [60] info: 1D-0079 AMPS transaction log journal file index sparsified: /data/journal/AMPS_Y30994.0000616055.journal
+2018-06-11T03:22:46.5213870+02:00 [59] info: 1D-0036 AMPS transaction log journal metadata written:
+journal metadata info:
+ journal file       = /data/journal/AMPS_Y30994.0000616057.journal
+ magic string        = AMPS
+ version             = 8
+ version string      = amps::txlog/v8
+ instance name hash  = 3765524036
+ compression type    = gz
+ compression options = 6
+ crc32               = 3992524499
+2018-06-11T03:22:46.5213880+02:00 [59] info: 1D-0035 AMPS transaction log journal extents written:
+extents info:
+ journal file  = /data/journal/AMPS_Y30994.0000616057.journal
+ first txid      = 0
+ first timestamp = 0
+ last txid       = 0
+ last timestamp  = 0
+ crc32           = 1970194773
+2018-06-11T03:22:46.5213890+02:00 [59] info: 1D-0005 AMPS transaction log close journal file: /data/journal/AMPS_Y30994.0000616057.journal
+2018-06-11T03:22:46.5214420+02:00 [59] info: 1D-0004 AMPS transaction log open journal file: /data/journal/AMPS_Y30994.0000616057.journal
+2018-06-11T03:22:47.9561960+02:00 [59] info: 1D-0006 AMPS transaction log create journal file: /data/journal/AMPS_Y30994.0000616058.journal
+2018-06-11T03:22:47.9567050+02:00 [63] info: 1D-0035 AMPS transaction log journal extents written:
+extents info:
+ journal file  = /data/journal/AMPS_Y30994.0000616057.journal
+ first txid      = 1528516924045909871
+ first timestamp = 20180611T012247.956137Z
+ last txid       = 0
+ last timestamp  = 
+ crc32           = 49647993
+2018-06-11T03:22:47.9569580+02:00 [59] info: 1D-0031 AMPS transaction log journal creation started:
+journal info:
+ journal file   = /data/journal/AMPS_Y30994.0000616058.journal
+ mode           = lazy
+ write size     = 1MB
+2018-06-11T03:22:47.9570190+02:00 [59] info: 1D-0032 AMPS transaction log journal creation completed:
+journal info:
+ journal file   = /data/journal/AMPS_Y30994.0000616058.journal
+ file size         = 10MB
+ write size        = 1MB
+ write concurrency = 1
+ allocate time     = 4.8667e-05 secs
+ extend time       = 3.31e-07 secs
+ mode              = lazy
+2018-06-11T03:22:47.9570950+02:00 [60] info: 1D-0005 AMPS transaction log close journal file: /data/journal/AMPS_Y30994.0000616056.journal
+2018-06-11T03:22:47.9572570+02:00 [59] info: 1D-0036 AMPS transaction log journal metadata written:
+journal metadata info:
+ journal file       = /data/journal/AMPS_Y30994.0000616058.journal
+ magic string        = AMPS
+ version             = 8
+ version string      = amps::txlog/v8
+ instance name hash  = 3765524036
+ compression type    = gz
+ compression options = 6
+ crc32               = 3992524499
+2018-06-11T03:22:47.9572580+02:00 [59] info: 1D-0035 AMPS transaction log journal extents written:
+extents info:
+ journal file  = /data/journal/AMPS_Y30994.0000616058.journal
+ first txid      = 0
+ first timestamp = 0
+ last txid       = 0
+ last timestamp  = 0
+ crc32           = 1970194773
+2018-06-11T03:22:47.9572590+02:00 [59] info: 1D-0005 AMPS transaction log close journal file: /data/journal/AMPS_Y30994.0000616058.journal
+2018-06-11T03:22:47.9572970+02:00 [59] info: 1D-0004 AMPS transaction log open journal file: /data/journal/AMPS_Y30994.0000616058.journal
+2018-06-11T03:22:47.9576140+02:00 [60] info: 1D-0035 AMPS transaction log journal extents written:
+extents info:
+ journal file  = /data/journal/AMPS_Y30994.0000616056.journal
+ first txid      = 1528516924045889348
+ first timestamp = 20180611T012246.520162Z
+ last txid       = 1528516924045909870
+ last timestamp  = 20180611T012247.956125Z
+ crc32           = 2532047858
+2018-06-11T03:22:47.9576240+02:00 [60] info: 1D-0079 AMPS transaction log journal file index sparsified: /data/journal/AMPS_Y30994.0000616056.journal
+2018-06-11T03:22:48.8191440+02:00 [59] info: 1D-0006 AMPS transaction log create journal file: /data/journal/AMPS_Y30994.0000616059.journal
+2018-06-11T03:22:48.8196230+02:00 [63] info: 1D-0035 AMPS transaction log journal extents written:
+extents info:
+ journal file  = /data/journal/AMPS_Y30994.0000616058.journal
+ first txid      = 1528516924045930344
+ first timestamp = 20180611T012248.819066Z
+ last txid       = 0
+ last timestamp  = 
+ crc32           = 2665133491
+2018-06-11T03:22:48.8199140+02:00 [59] info: 1D-0031 AMPS transaction log journal creation started:
+journal info:
+ journal file   = /data/journal/AMPS_Y30994.0000616059.journal
+ mode           = lazy
+ write size     = 1MB
+2018-06-11T03:22:48.8199590+02:00 [59] info: 1D-0032 AMPS transaction log journal creation completed:
+journal info:
+ journal file   = /data/journal/AMPS_Y30994.0000616059.journal
+ file size         = 10MB
+ write size        = 1MB
+ write concurrency = 1
+ allocate time     = 3.3989e-05 secs
+ extend time       = 3.24e-07 secs
+ mode              = lazy
+2018-06-11T03:22:48.8200450+02:00 [60] info: 1D-0005 AMPS transaction log close journal file: /data/journal/AMPS_Y30994.0000616057.journal
+2018-06-11T03:22:48.8202260+02:00 [59] info: 1D-0036 AMPS transaction log journal metadata written:
+journal metadata info:
+ journal file       = /data/journal/AMPS_Y30994.0000616059.journal
+ magic string        = AMPS
+ version             = 8
+ version string      = amps::txlog/v8
+ instance name hash  = 3765524036
+ compression type    = gz
+ compression options = 6
+ crc32               = 3992524499
+2018-06-11T03:22:48.8202270+02:00 [59] info: 1D-0035 AMPS transaction log journal extents written:
+extents info:
+ journal file  = /data/journal/AMPS_Y30994.0000616059.journal
+ first txid      = 0
+ first timestamp = 0
+ last txid       = 0
+ last timestamp  = 0
+ crc32           = 1970194773
+2018-06-11T03:22:48.8202290+02:00 [59] info: 1D-0005 AMPS transaction log close journal file: /data/journal/AMPS_Y30994.0000616059.journal
+2018-06-11T03:22:48.8202820+02:00 [59] info: 1D-0004 AMPS transaction log open journal file: /data/journal/AMPS_Y30994.0000616059.journal
+2018-06-11T03:22:48.8206330+02:00 [60] info: 1D-0035 AMPS transaction log journal extents written:
+extents info:
+ journal file  = /data/journal/AMPS_Y30994.0000616057.journal
+ first txid      = 1528516924045909871
+ first timestamp = 20180611T012247.956137Z
+ last txid       = 1528516924045930343
+ last timestamp  = 20180611T012248.819056Z
+ crc32           = 977492619
+2018-06-11T03:22:48.8206390+02:00 [60] info: 1D-0079 AMPS transaction log journal file index sparsified: /data/journal/AMPS_Y30994.0000616057.journal
+2018-06-11T03:22:49.3961390+02:00 [59] info: 1D-0006 AMPS transaction log create journal file: /data/journal/AMPS_Y30994.0000616060.journal
+2018-06-11T03:22:49.3966580+02:00 [63] info: 1D-0035 AMPS transaction log journal extents written:
+extents info:
+ journal file  = /data/journal/AMPS_Y30994.0000616059.journal
+ first txid      = 1528516924045950816
+ first timestamp = 20180611T012249.396082Z
+ last txid       = 0
+ last timestamp  = 
+ crc32           = 1112813612
+2018-06-11T03:22:49.3967710+02:00 [59] info: 1D-0031 AMPS transaction log journal creation started:
+journal info:
+ journal file   = /data/journal/AMPS_Y30994.0000616060.journal
+ mode           = lazy
+ write size     = 1MB
+2018-06-11T03:22:49.3968180+02:00 [59] info: 1D-0032 AMPS transaction log journal creation completed:
+journal info:
+ journal file   = /data/journal/AMPS_Y30994.0000616060.journal
+ file size         = 10MB
+ write size        = 1MB
+ write concurrency = 1
+ allocate time     = 3.4283e-05 secs
+ extend time       = 3.27e-07 secs
+ mode              = lazy
+2018-06-11T03:22:49.3968420+02:00 [60] info: 1D-0005 AMPS transaction log close journal file: /data/journal/AMPS_Y30994.0000616058.journal
+2018-06-11T03:22:49.3972500+02:00 [59] info: 1D-0036 AMPS transaction log journal metadata written:
+journal metadata info:
+ journal file       = /data/journal/AMPS_Y30994.0000616060.journal
+ magic string        = AMPS
+ version             = 8
+ version string      = amps::txlog/v8
+ instance name hash  = 3765524036
+ compression type    = gz
+ compression options = 6
+ crc32               = 3992524499
+2018-06-11T03:22:49.3972510+02:00 [59] info: 1D-0035 AMPS transaction log journal extents written:
+extents info:
+ journal file  = /data/journal/AMPS_Y30994.0000616060.journal
+ first txid      = 0
+ first timestamp = 0
+ last txid       = 0
+ last timestamp  = 0
+ crc32           = 1970194773
+2018-06-11T03:22:49.3972520+02:00 [59] info: 1D-0005 AMPS transaction log close journal file: /data/journal/AMPS_Y30994.0000616060.journal
+2018-06-11T03:22:49.3972920+02:00 [59] info: 1D-0004 AMPS transaction log open journal file: /data/journal/AMPS_Y30994.0000616060.journal
+2018-06-11T03:22:49.3975850+02:00 [60] info: 1D-0035 AMPS transaction log journal extents written:
+extents info:
+ journal file  = /data/journal/AMPS_Y30994.0000616058.journal
+ first txid      = 1528516924045930344
+ first timestamp = 20180611T012248.819066Z
+ last txid       = 1528516924045950815
+ last timestamp  = 20180611T012249.396065Z
+ crc32           = 3378484132
+2018-06-11T03:22:49.3975900+02:00 [60] info: 1D-0079 AMPS transaction log journal file index sparsified: /data/journal/AMPS_Y30994.0000616058.journal
+2018-06-11T03:23:01.2653530+02:00 [59] info: 1D-0006 AMPS transaction log create journal file: /data/journal/AMPS_Y30994.0000616061.journal
+2018-06-11T03:23:01.2660180+02:00 [59] info: 1D-0031 AMPS transaction log journal creation started:
+journal info:
+ journal file   = /data/journal/AMPS_Y30994.0000616061.journal
+ mode           = lazy
+ write size     = 1MB
+2018-06-11T03:23:01.2660640+02:00 [59] info: 1D-0032 AMPS transaction log journal creation completed:
+journal info:
+ journal file   = /data/journal/AMPS_Y30994.0000616061.journal
+ file size         = 10MB
+ write size        = 1MB
+ write concurrency = 1
+ allocate time     = 3.3818e-05 secs
+ extend time       = 3.25e-07 secs
+ mode              = lazy
+2018-06-11T03:23:01.2661500+02:00 [60] info: 1D-0005 AMPS transaction log close journal file: /data/journal/AMPS_Y30994.0000616059.journal
+2018-06-11T03:23:01.2663280+02:00 [59] info: 1D-0036 AMPS transaction log journal metadata written:
+journal metadata info:
+ journal file       = /data/journal/AMPS_Y30994.0000616061.journal
+ magic string        = AMPS
+ version             = 8
+ version string      = amps::txlog/v8
+ instance name hash  = 3765524036
+ compression type    = gz
+ compression options = 6
+ crc32               = 3992524499
