@@ -40,13 +40,18 @@ BCHtkrs = getTickerData(0, 'BCH')
 ETHtkrs = getTickerData(0, 'ETH')
 #getting LTC tickers
 LTCtkrs = getTickerData(0, 'LTC')
-if BCHtkrs == '' or ETHtkrs == '' or LTCtkrs == '':
+#getting VOX tickers
+VOXtkrs = getTickerData(0, 'VOX')
+
+#avoid empty arrays
+if BCHtkrs == '' or ETHtkrs == '' or LTCtkrs == '' or VOXtkrs == '':
     sys.exit("Don't have data to proccess")
 
 #finding positive ends
 BCHtkrsPos = getSomeTickers(0, BCHtkrs, 'pos')
 ETHtkrsPos = getSomeTickers(0, ETHtkrs, 'pos')
 LTCtkrsPos = getSomeTickers(0, LTCtkrs, 'pos')
+VOXtkrsPos = getSomeTickers(0, VOXtkrs, 'pos')
 #adding currency mark to each row and put all in one by JSON way
 positiveTickerData = '['
 for row in BCHtkrsPos:
@@ -58,6 +63,9 @@ for row in ETHtkrsPos:
 for row in LTCtkrsPos:
     row['currency'] = 'LTC'
     positiveTickerData = positiveTickerData + str(row) + ','
+for row in VOXtkrsPos:
+    row['currency'] = 'VOX'
+    positiveTickerData = positiveTickerData + str(row) + ','
 positiveTickerData = positiveTickerData[:-1] + ']'
 #writing positive ends
 f = open("positiveTickerData.txt", "w")
@@ -68,6 +76,7 @@ f.close()
 BCHtkrsNeg = getSomeTickers(0, BCHtkrs, 'neg')
 ETHtkrsNeg = getSomeTickers(0, ETHtkrs, 'neg')
 LTCtkrsNeg = getSomeTickers(0, LTCtkrs, 'neg')
+VOXtkrsNeg = getSomeTickers(0, VOXtkrs, 'neg')
 #adding currency mark to each row and put all in one by JSON way
 negativeTickerData = '['
 for row in BCHtkrsNeg:
@@ -78,6 +87,9 @@ for row in ETHtkrsNeg:
     negativeTickerData = negativeTickerData + str(row) + ','
 for row in LTCtkrsNeg:
     row['currency'] = 'LTC'
+    negativeTickerData = negativeTickerData + str(row) + ','
+for row in VOXtkrsNeg:
+    row['currency'] = 'VOX'
     negativeTickerData = negativeTickerData + str(row) + ','
 negativeTickerData = negativeTickerData[:-1] + ']'
 #writing negative ends
