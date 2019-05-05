@@ -59,7 +59,7 @@ VOXtkrs = getTickerData(0, 'VOX')
 #avoid empty arrays
 if BCHtkrs == '' or ETHtkrs == '' or LTCtkrs == '' or VOXtkrs == '':
     sys.exit("Don't have data to proccess")
-
+#maybe for better performance filtering has to be done with storing what already sorted
 #finding positive ends
 BCHtkrsPos = getSomeTickers(0, BCHtkrs, 'pos')
 ETHtkrsPos = getSomeTickers(0, ETHtkrs, 'pos')
@@ -80,6 +80,8 @@ for row in VOXtkrsPos:
     row['currency'] = 'VOX'
     positiveTickerData = positiveTickerData + str(row) + ','
 positiveTickerData = positiveTickerData[:-1] + ']'
+#replace char ' by "
+positiveTickerData = positiveTickerData.replace("'", '"', -1)
 #writing positive ends
 f = open("positiveTickerData.txt", "w")
 f.write(positiveTickerData)
@@ -105,6 +107,8 @@ for row in VOXtkrsNeg:
     row['currency'] = 'VOX'
     negativeTickerData = negativeTickerData + str(row) + ','
 negativeTickerData = negativeTickerData[:-1] + ']'
+#replace char ' by "
+negativeTickerData = negativeTickerData.replace("'", '"', -1)
 #writing negative ends
 f = open("negativeTickerData.txt", "w")
 f.write(negativeTickerData)
