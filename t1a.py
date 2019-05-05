@@ -8,15 +8,20 @@ import requests
 #currency - name of currency for getting ticker data
 #return JSON string with Ticker Data
 def getTickerData(self, currency):
+    #wrapped in try_catch
     try:
+        #pushing http request to alphavantage with choosed currency and storing only json part of answer
         rq = requests.get('https://www.alphavantage.co/query?function=DIGITAL_CURRENCY_DAILY&symbol='+
         currency +'&market=EUR&apikey=VEWJ1K6W3ENPI4NB').json()
     except:
+        #Something went wrong
         print("Something went wrong")
     finally:
         try:
+            #try to find time series array in json
             return rq['Time Series (Digital Currency Daily)']
         except:
+            #return empty string if there isn't time series array
             return ''
 
 #function return targeted tickers from input list
@@ -24,13 +29,21 @@ def getTickerData(self, currency):
 #tickers - source list of data
 #target - behavior to match, could throw to 'pos' or 'neg'
 def getSomeTickers(self, tickers, target):
+    #temp array for matched tickers
     founded = []
+    #avoid empty input array and wrong target input
     if tickers == [] or (target != 'pos' and target != 'neg'):
+        #return empty array
         return founded
+    #iterate over input array
     for ticker in tickers:
+        #calc gain of current ticker
         tickerGain = float(tickers[ticker]['4a. close (EUR)']) - float(tickers[ticker]['1a. open (EUR)'])
+        #compare calculated gain with target
         if (tickerGain > 0 and 'pos' == target) or (tickerGain < 0 and 'neg' == target):
+            #push to ticker his timeStamp
             tickers[ticker]['timeStamp'] = ticker
+            #push ticker to founded array
             founded.append(tickers[ticker])
     return founded
 
