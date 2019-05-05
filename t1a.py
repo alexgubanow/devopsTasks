@@ -29,8 +29,6 @@ def getSomeTickers(self, tickers, target):
         return founded
     for ticker in tickers:
         tickerGain = float(tickers[ticker]['4a. close (EUR)']) - float(tickers[ticker]['1a. open (EUR)'])
-        if tickerGain < 0:
-            tickerGain = -1
         if (tickerGain > 0 and 'pos' == target) or (tickerGain < 0 and 'neg' == target):
             tickers[ticker]['timeStamp'] = ticker
             founded.append(tickers[ticker])
@@ -64,4 +62,25 @@ positiveTickerData = positiveTickerData[:-1] + ']'
 #writing positive ends
 f = open("positiveTickerData.txt", "w")
 f.write(positiveTickerData)
+f.close()
+
+#finding negative ends
+BCHtkrsNeg = getSomeTickers(0, BCHtkrs, 'neg')
+ETHtkrsNeg = getSomeTickers(0, ETHtkrs, 'neg')
+LTCtkrsNeg = getSomeTickers(0, LTCtkrs, 'neg')
+#adding currency mark to each row and put all in one by JSON way
+negativeTickerData = '['
+for row in BCHtkrsNeg:
+    row['currency'] = 'BCH'
+    negativeTickerData = negativeTickerData + str(row) + ','
+for row in ETHtkrsNeg:
+    row['currency'] = 'ETH'
+    negativeTickerData = negativeTickerData + str(row) + ','
+for row in LTCtkrsNeg:
+    row['currency'] = 'LTC'
+    negativeTickerData = negativeTickerData + str(row) + ','
+negativeTickerData = negativeTickerData[:-1] + ']'
+#writing negative ends
+f = open("negativeTickerData.txt", "w")
+f.write(negativeTickerData)
 f.close()
