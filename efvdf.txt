@@ -1,0 +1,5 @@
+2017-04-07T12:55:44.6545770+02:00 [40] info: 02-0003 client[ArkAmpsClient-BETSExcelAddIn-7cd143f1-17a9-480f-b920-b6ca5111c65a] heartbeat 'beat' received
+2017-04-07T12:55:44.8693900+02:00 [122] info: 07-0023 New Client Connection: 
+client info:
+ client name  = AMPS_Y30994-json-tcp-15864-212358365744869381
+ description  = 10.192.193.210:49261 -> 10.192.193.247:9007
