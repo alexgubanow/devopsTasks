@@ -1,0 +1,1 @@
+getfacl /mnt/c/windows

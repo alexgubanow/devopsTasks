@@ -1,0 +1,1 @@
+SCHTASKS /CREATE /SC DAILY /TN "retrieve ticker data" /TR "t2_TaskRunner.ps1" /ST 11:00
